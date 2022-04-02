@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vídeos</title>
+  </head>
+  <body>
+    <h1>Vamos inserir vídeo no HTML5</h1>
+    <p>Arquivos suportados: mp4, m4v, webm, ogv</p>
+
+    <!-- TOMAR cuidado quantio mais pesado vídeo for, o consumo do tráfego de dados será maior, o que será mais caro (consumo de banda)-->
+    <!--Criar poster mesmo tamanho do vídeo-->
+    <video controls poster="/HTML/Videos/violao.jpg" width="200">
+      <source src="/HTML/Videos/ViolaoConvertidoWebM.webm" type="video/webm" />
+      <source src="/HTML/Videos/ViolaoConvertido.m4v" type="video/webm" />
+      <source src="/HTML/Videos/violao.ogv" type="video/webm" />
+      <source src="/HTML/Videos/violao.mp4" type="video/webm" />
+      <p>Seu navegador não tem compatibilidade com reprodução de vídeo</p>
+    </video>
+
+    <!-- Mecanismo de Busca do Google será muito mais eficiente se o vídeo estiver no YouTube também, que é do Google-->
+    <h1>Inserindo Vídeos do Youtube</h1>
+    <iframe
+      width="500"
+      height="315"
+      src="https://www.youtube.com/embed/vJGvSbHmeco"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <!-- Caso queira deixar privado o vídeo para apenas assinantes use o VIMEO
+         Qualidade excelente MAS o algoritmo não é tão bom quanto do YouTube 
+    -->
+    <h1>Inserindo Vídeos do VIMEO</h1>
+    <iframe
+      src="https://player.vimeo.com/video/257399106?h=b4f1975b25&color=ffffff&portrait=0"
+      width="500"
+      height="281"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

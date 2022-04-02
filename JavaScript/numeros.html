@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font: normal 20pt Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var dinheiro = 2500.5
+      document.write(` ${dinheiro.toFixed(2)} </br>`)
+      document.write(`${dinheiro.toFixed(2).replace('.', ',')}</br>`)
+      document.write(
+        `${dinheiro.toLocaleString('pt-BR', {
+          style: 'currency',
+          currency: 'BRL'
+        })} em Reais</br>`
+      )
+      document.write(
+        `${dinheiro.toLocaleString('pt-BR', {
+          style: 'currency',
+          currency: 'USD'
+        })} em Dólar.</br>`
+      )
+      document.write(
+        `${dinheiro.toLocaleString('pt-BR', {
+          style: 'currency',
+          currency: 'EUR'
+        })} em Euro.</br>`
+      )
+    </script>
+  </body>
+</html>

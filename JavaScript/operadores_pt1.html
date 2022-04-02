@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operadores | Parte 1</title>
+    <style>
+      body {
+        background-color: rgb(59, 0, 168);
+        color: white;
+        font: normal 15pt Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Operadores</h1>
+    <script>
+      var a = 5 + 3
+      document.write(`var a = 5 + 3 = ${a} </br>`)
+      var b = a % 5
+      document.write(`var b = a % 5 = ${b} </br>`)
+      var c = 5 * b ** 2
+      document.write(`var c = 5 * b ** 2 = ${c} </br>`)
+      var d = 10 - a / 2
+      document.write(`var d = 10 - a / 2 = ${d} </br>`)
+      var e = (6 * 2) / d
+      document.write(`var e = (6 * 2) / d = ${e} </br>`)
+      var f = (b % e) + 4 / e
+      document.write(`var f = (b % e) + 4 / e = ${f} </br>`)
+    </script>
+
+    <h2>Auto-Atribuição</h2>
+    <script>
+      var n = 3
+      document.write(`var n = ${n} </br>`)
+      n = n + 4
+      document.write(`n = n + 4 = ${n} </br>`)
+      n = n - 5
+      document.write(`n = n + 4 = ${n} </br>`)
+      n = n * 4
+      document.write(`n = n - 5 = ${n} </br>`)
+      n = n / 2
+      document.write(`n = n + 4 = ${n} </br>`)
+      n = n ** 2
+      document.write(`n = n + 4 = ${n} </br>`)
+      n = n % 5
+      document.write(`n = n + 4 = ${n} </br>`)
+    </script>
+
+    <h2>Simplificando</h2>
+    <script>
+      var n = 3
+      document.write(`var n = ${n} </br>`)
+      n += 4
+      document.write(`n = n + 4 = ${n}__ _n += 4</br>`)
+      n -= 5
+      document.write(`n = n + 4 = ${n}_ __n -= 5</br>`)
+      n *= 4
+      document.write(`n = n - 5 = ${n}__  _n *= 4</br>`)
+      n /= 2
+      document.write(`n = n + 4 = ${n}_ __n /= 2</br>`)
+      n **= 2
+      document.write(`n = n + 4 = ${n}_ _n **= 2</br>`)
+      n %= 5
+      document.write(`n = n + 4 = ${n}__ _n %= 5</br>`)
+    </script>
+
+    <h2>Incremento ou Decremento</h2>
+    <script>
+      var n = 1
+      n++
+      document.write(`n = n + 1 ---> n++ </br>`)
+      n--
+      document.write(`n = n - 1 ---> n--`)
+    </script>
+  </body>
+</html>
