@@ -1,6 +1,6 @@
 # curso_em_video
 
-Curso HTML, CSS e JavaScript
+Exercícios de HTML, CSS e JavaScript
 
 Aqui está meus estudos, anotaçõe e aprendizados que tive no curso de HTMl5 e CSS3
 do Curso em Vídeo - Gustavo Guanabara.
